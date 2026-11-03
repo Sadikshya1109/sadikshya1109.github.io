@@ -1,159 +1,73 @@
-'use strict';
+"use strict";
+(function () {
+  const themeKey = "sadikshya-theme";
+  const themes = ["light", "dark", "floral"];
+  const themeButtons = Array.from(document.querySelectorAll("[data-set-theme]"));
+  const navButtons = Array.from(document.querySelectorAll("[data-tab]"));
+  const pages = Array.from(document.querySelectorAll("[data-page]"));
+  const announcement = document.getElementById("announcement");
 
-
-
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
+  function setTheme(theme, remember) {
+    const chosen = themes.includes(theme) ? theme : "light";
+    document.documentElement.dataset.theme = chosen;
+    themeButtons.forEach(function (button) {
+      const selected = button.dataset.setTheme === chosen;
+      button.setAttribute("aria-pressed", String(selected));
+    });
+    if (remember) {
+      try { localStorage.setItem(themeKey, chosen); } catch (error) {}
+      if (announcement) announcement.textContent = chosen.charAt(0).toUpperCase() + chosen.slice(1) + " theme selected";
     }
-
   }
 
-}
-
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
-
-for (let i = 0; i < filterBtn.length; i++) {
-
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
-  });
-
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
+  function showPage(name, updateUrl) {
+    const target = pages.find(function (page) { return page.dataset.page === name; });
+    if (!target) return;
+    pages.forEach(function (page) {
+      const selected = page === target;
+      page.hidden = !selected;
+      page.classList.toggle("is-active", selected);
+    });
+    navButtons.forEach(function (button) {
+      const selected = button.dataset.tab === name;
+      button.classList.toggle("is-active", selected);
+      if (selected) button.setAttribute("aria-current", "page");
+      else button.removeAttribute("aria-current");
+    });
+    if (updateUrl && window.location.hash !== "#" + name) {
+      history.replaceState(null, "", "#" + name);
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
+  themeButtons.forEach(function (button) {
+    button.addEventListener("click", function () { setTheme(button.dataset.setTheme, true); });
   });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
+  navButtons.forEach(function (button) {
+    button.addEventListener("click", function () { showPage(button.dataset.tab, true); });
   });
-}
+  document.querySelectorAll("[data-goto]").forEach(function (button) {
+    button.addEventListener("click", function () { showPage(button.dataset.goto, true); });
+  });
+  document.querySelectorAll("[data-filter]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const category = button.dataset.filter;
+      document.querySelectorAll("[data-filter]").forEach(function (other) {
+        const selected = other === button;
+        other.classList.toggle("is-active", selected);
+        other.setAttribute("aria-pressed", String(selected));
+      });
+      document.querySelectorAll(".project-card[data-category]").forEach(function (card) {
+        card.hidden = category !== "all" && card.dataset.category !== category;
+      });
+    });
+  });
+  window.addEventListener("hashchange", function () {
+    showPage(window.location.hash.slice(1), false);
+  });
+  const currentTheme = document.documentElement.dataset.theme;
+  setTheme(currentTheme, false);
+  showPage(window.location.hash.slice(1) || "about", false);
+  const year = document.getElementById("year");
+  if (year) year.textContent = String(new Date().getFullYear());
+})();

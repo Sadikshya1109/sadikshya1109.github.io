@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="590" viewBox="0 0 520 590">
+  <defs>
+    <g id="rose" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 12 C-1 36 8 46 0 63" stroke="#84977d" stroke-width="1.6" fill="none"/>
+      <path d="M1 43 Q-20 21 -23 31 Q-16 44 1 43 M2 52 Q21 33 26 42 Q19 54 2 52" fill="#a9b99b" stroke="#82947d" stroke-width=".6"/>
+      <g fill="#e8a0b5" stroke="#bf7b94" stroke-width=".9">
+        <ellipse cx="-7" cy="0" rx="8.5" ry="12.5" transform="rotate(-58 -7 0)"/>
+        <ellipse cx="8" cy="-1" rx="8.5" ry="12.5" transform="rotate(55 8 -1)"/>
+        <ellipse cx="0" cy="-9" rx="8.5" ry="12" transform="rotate(7 0 -9)"/>
+        <ellipse cx="-4" cy="9" rx="8.5" ry="11" transform="rotate(31 -4 9)"/>
+        <ellipse cx="8" cy="8" rx="8.5" ry="11" transform="rotate(-37 8 8)"/>
+      </g>
+      <circle r="3.1" fill="#e9cf99" stroke="#bb996b" stroke-width=".7"/>
+    </g>
+    <g id="blue" stroke-linecap="round">
+      <path d="M0 9 Q-10 39 8 67" fill="none" stroke="#82967e" stroke-width="1.5"/>
+      <path d="M-3 43 Q-18 27 -26 33 Q-12 45 -3 43 M3 52 Q20 32 28 40 Q18 55 3 52" fill="#a4b596" stroke="#7f947e" stroke-width=".7"/>
+      <g fill="#9cb8d8" stroke="#6e91b5" stroke-width="1.1">
+        <ellipse cx="-9" cy="-3" rx="7" ry="12" transform="rotate(-54 -9 -3)"/>
+        <ellipse cx="8" cy="-4" rx="7" ry="12" transform="rotate(56 8 -4)"/>
+        <ellipse cx="0" cy="-10" rx="7" ry="12"/>
+        <ellipse cx="-7" cy="9" rx="7" ry="11" transform="rotate(37 -7 9)"/>
+        <ellipse cx="8" cy="9" rx="7" ry="11" transform="rotate(-36 8 9)"/>
+      </g><circle r="3.2" fill="#f3de9e" stroke="#bb9d6b" stroke-width=".7"/>
+    </g>
+    <g id="daisy">
+      <g fill="#fffefa" stroke="#d3c9b9" stroke-width=".6">
+        <ellipse cy="-13" rx="5" ry="11"/><ellipse cy="-13" rx="5" ry="11" transform="rotate(45)"/>
+        <ellipse cy="-13" rx="5" ry="11" transform="rotate(90)"/><ellipse cy="-13" rx="5" ry="11" transform="rotate(135)"/>
+        <ellipse cy="-13" rx="5" ry="11" transform="rotate(180)"/><ellipse cy="-13" rx="5" ry="11" transform="rotate(225)"/>
+        <ellipse cy="-13" rx="5" ry="11" transform="rotate(270)"/><ellipse cy="-13" rx="5" ry="11" transform="rotate(315)"/>
+      </g><circle r="7" fill="#e7c46d" stroke="#cfab5d" stroke-width=".8"/>
+    </g>
+    <g id="sprig" fill="none" stroke="#809574" stroke-width="1.4" stroke-linecap="round">
+      <path d="M0 0 Q12 -20 18 -55 M12 -35 Q-8 -48 -15 -38 M15 -46 Q34 -51 37 -66"/>
+      <path d="M-15 -38 Q1 -38 10 -33 M37 -66 Q25 -64 16 -46" fill="#adbf9e" stroke-width=".8"/>
+      <path d="M18 -55 Q30 -62 28 -75" />
+      <circle cx="29" cy="-79" r="4" fill="#dfb0c1" stroke="#be8a9d" stroke-width=".5"/>
+    </g>
+  </defs>
+  <g opacity=".7">
+    <use href="#rose" transform="translate(65 64) rotate(12) scale(.75)"/>
+    <use href="#blue" transform="translate(310 42) rotate(-19) scale(.77)"/>
+    <use href="#daisy" transform="translate(444 105) scale(.72)"/>
+    <use href="#sprig" transform="translate(180 142) rotate(45)"/>
+    <use href="#daisy" transform="translate(237 218) scale(.55)"/>
+    <use href="#rose" transform="translate(460 275) rotate(28) scale(.92)"/>
+    <use href="#blue" transform="translate(90 304) rotate(-15) scale(.87)"/>
+    <use href="#sprig" transform="translate(352 377) rotate(-23)"/>
+    <use href="#daisy" transform="translate(390 460) scale(.88)"/>
+    <use href="#rose" transform="translate(199 500) rotate(20) scale(.65)"/>
+    <use href="#blue" transform="translate(22 566) rotate(-22) scale(.54)"/>
+    <use href="#daisy" transform="translate(38 192) scale(.38)"/>
+    <use href="#daisy" transform="translate(490 508) scale(.4)"/>
+    <use href="#sprig" transform="translate(302 568) rotate(62) scale(.75)"/>
+  </g>
+  <g fill="#d9a9b9" opacity=".52">
+    <circle cx="123" cy="214" r="2"/><circle cx="129" cy="208" r="2"/><circle cx="135" cy="215" r="2"/><circle cx="129" cy="221" r="2"/>
+    <circle cx="335" cy="292" r="2"/><circle cx="342" cy="286" r="2"/><circle cx="349" cy="293" r="2"/><circle cx="342" cy="300" r="2"/>
+    <circle cx="72" cy="460" r="2"/><circle cx="78" cy="453" r="2"/><circle cx="84" cy="461" r="2"/><circle cx="78" cy="468" r="2"/>
+  </g>
+</svg>
