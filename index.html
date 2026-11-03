@@ -1,1201 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9f6">
+  <meta name="description" content="Sadikshya Ghimire — civil engineer, hydropower researcher and educator working in hydrological modelling, interpretable machine learning and Himalayan water resources.">
+  <title>Sadikshya Ghimire | Academic & Research Portfolio</title>
+  <link rel="icon" href="assets/images/floral-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem("sadikshya-theme");if(["light","dark","floral"].includes(t))document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <script src="assets/js/script.js" defer></script>
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Profile and contact">
+      <div class="profile-top">
+        <div class="portrait" aria-label="Profile photograph placeholder with initials SG">
+          <span>SG</span><span class="portrait-flower" aria-hidden="true">✿</span>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <div>
+          <h1 class="profile-name">Sadikshya Ghimire</h1>
+          <p class="profile-role">Civil Engineer · Hydropower Researcher</p>
+        </div>
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
+      <div class="profile-rule"></div>
+      <p class="profile-intro">Exploring more reliable predictions and sustainable decisions for Himalayan water systems.</p>
+      <ul class="contact-list">
+        <li><span class="contact-icon" aria-hidden="true">✉</span><span><small>Email</small><a href="mailto:sadikshyaghimire0@gmail.com">sadikshyaghimire0@gmail.com</a></span></li>
+        <li><span class="contact-icon" aria-hidden="true">⌖</span><span><small>Location</small><span>Kathmandu, Nepal</span></span></li>
+        <li><span class="contact-icon" aria-hidden="true">↗</span><span><small>LinkedIn</small><a href="https://www.linkedin.com/in/sadikshyaghimire" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></span></li>
+        <li><span class="contact-icon" aria-hidden="true">⌘</span><span><small>GitHub</small><a href="https://github.com/Sadikshya1109" target="_blank" rel="noopener noreferrer">Sadikshya1109</a></span></li>
+      </ul>
+      <button class="sidebar-button" type="button" data-goto="contact">Let's connect <span aria-hidden="true">↗</span></button>
+      <p class="sidebar-note">Open to research conversations and doctoral opportunities.</p>
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+    <main class="content-panel" id="main-content">
+      <div class="topbar">
+        <nav class="page-nav" aria-label="Main navigation">
+          <button type="button" class="nav-button is-active" data-tab="about" aria-current="page">About Me</button>
+          <button type="button" class="nav-button" data-tab="resume">Education & Experience</button>
+          <button type="button" class="nav-button" data-tab="projects">Research & Projects</button>
+          <button type="button" class="nav-button" data-tab="publications">Publications & Activities</button>
+          <button type="button" class="nav-button" data-tab="contact">Contact</button>
+        </nav>
+        <div class="theme-switch" role="group" aria-label="Choose website appearance">
+          <button type="button" data-set-theme="light" aria-pressed="true" title="Clean light theme">☀ <span>Light</span></button>
+          <button type="button" data-set-theme="dark" aria-pressed="false" title="Classic dark theme">☾ <span>Dark</span></button>
+          <button type="button" data-set-theme="floral" aria-pressed="false" title="Floral wallpaper theme">✿ <span>Floral</span></button>
         </div>
+      </div>
 
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+      <section class="page is-active" data-page="about" id="about" aria-labelledby="about-heading">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> ABOUT ME & RESEARCH INTERESTS</div>
+        <div class="hero">
+          <div class="hero-copy">
+            <h2 id="about-heading">Hello, I'm <em>Sadikshya.</em></h2>
+            <p class="hero-lead">I explore how hydrological modelling and interpretable machine learning can help us better understand water in complex mountain regions.</p>
+            <p>I'm a civil engineer with an MSc in Hydropower Engineering from the Institute of Engineering, Pulchowk Campus, Nepal. My work connects physical models, data-driven methods and practical questions in hydropower and water-resource management.</p>
+            <div class="hero-actions">
+              <button class="button primary" type="button" data-goto="projects">Explore my research <span aria-hidden="true">↗</span></button>
+              <button class="button secondary" type="button" data-goto="publications">View publications</button>
             </div>
-
-            <h3 class="h3">Education</h3>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
+          <div class="hero-art" aria-hidden="true">
+            <div class="hero-art-orbit"></div>
+            <svg viewBox="0 0 250 230" role="presentation"><path d="M15 165 C65 125 65 200 115 160 S190 132 240 96" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity=".35"/><path d="M15 187 C65 147 72 220 122 180 S188 158 241 120" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".6"/><path d="M24 109 L74 34 L123 113 L151 78 L216 158" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" opacity=".35"/><circle cx="195" cy="43" r="19" fill="currentColor" opacity=".14"/></svg>
+            <span class="hero-art-flower flower-one">✿</span><span class="hero-art-flower flower-two">✽</span>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+        </div>
+        <div class="section-heading"><span>01</span><div><h3>What I'm curious about</h3><p>Research interests at the intersection of water, modelling and decision-making.</p></div></div>
+        <div class="interest-grid">
+          <article class="interest-card"><div class="interest-symbol">≈</div><h4>Hydrological Modelling</h4><p>Streamflow, flooding and sediment processes in data-scarce Himalayan catchments.</p></article>
+          <article class="interest-card"><div class="interest-symbol">✧</div><h4>Interpretable Machine Learning</h4><p>Hybrid physical–ML approaches that improve predictions while retaining hydrological insight.</p></article>
+          <article class="interest-card"><div class="interest-symbol">◈</div><h4>Sustainable Water Systems</h4><p>Reservoir sediment management, hydropower resilience and water resources under uncertainty.</p></article>
+        </div>
+        <div class="feature-banner">
+          <div><span class="kicker">FEATURED RESEARCH</span><h3>When physical models meet machine learning</h3><p>My MSc thesis developed a SWAT–XGBoost residual-correction framework and used SHAP to interpret the predictors of daily sediment load in the Marsyangdi River Basin.</p><button class="text-link" type="button" data-goto="projects">Read about the study <span aria-hidden="true">↗</span></button></div>
+          <div class="feature-diagram" aria-hidden="true"><span>SWAT</span><i>→</i><span>XGBoost</span><i>→</i><span>SHAP</span></div>
+        </div>
+        <div class="section-heading"><span>02</span><div><h3>Technical toolkit</h3><p>Methods and software I use in research and engineering.</p></div></div>
+        <div class="skill-groups">
+          <div><h4>Hydrological & Hydraulic</h4><p>SWAT · HEC-RAS · HEC-HMS · RESCON2</p></div>
+          <div><h4>Programming & Data</h4><p>Python · C · Data analysis · Interpretable ML</p></div>
+          <div><h4>Spatial & Engineering</h4><p>ArcGIS · QGIS · ETABS · AutoCAD</p></div>
+        </div>
+      </section>
+
+      <section class="page" data-page="resume" id="resume" aria-labelledby="resume-heading" hidden>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> EDUCATION & EXPERIENCE</div>
+        <h2 class="page-title" id="resume-heading">The journey <em>so far.</em></h2>
+        <p class="page-intro">A foundation in civil engineering, specialized study in hydropower, and experience in research, teaching and engineering practice.</p>
+        <div class="section-heading"><span>01</span><div><h3>Education</h3><p>Academic milestones and distinctions.</p></div></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-date">2024 — 2026</span><h4>MSc in Hydropower Engineering</h4><p class="timeline-place">Institute of Engineering, Pulchowk Campus · Tribhuvan University</p><p>Research focused on SWAT–XGBoost sediment prediction in the Marsyangdi River Basin.</p><span class="mini-badge">Topper · 3rd and 4th semesters</span></article>
+          <article class="timeline-item"><span class="timeline-date">2018 — 2023</span><h4>Bachelor's in Civil and Rural Engineering</h4><p class="timeline-place">Nepal Engineering College · Pokhara University</p><p>Civil engineering studies with projects in structural design and engineering analysis.</p><span class="mini-badge">Four merit scholarships</span></article>
+          <article class="timeline-item"><span class="timeline-date">2016 — 2018</span><h4>Higher Secondary Education</h4><p class="timeline-place">Kathmandu Model Higher Secondary School</p></article>
+        </div>
+        <div class="section-heading"><span>02</span><div><h3>Professional experience</h3><p>Engineering practice, classroom work and applied technical training.</p></div></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-date">August 2026</span><h4>Assistant Lecturer — Water Resource Engineering</h4><p class="timeline-place">Everest Engineering College · Pokhara University</p><p>Teaching in water-resources engineering and connecting modelling concepts to practice.</p></article>
+          <article class="timeline-item"><span class="timeline-date">June 2026</span><h4>Trainer — Geospatial, Hydrological & Hydraulic Modelling</h4><p class="timeline-place">MSc Hydropower Engineering Department · Pulchowk Campus</p><p>Training involving GIS, SWAT, HEC-RAS and machine-learning applications in hydrology.</p></article>
+          <article class="timeline-item"><span class="timeline-date">January — July 2024</span><h4>Civil Engineer Intern</h4><p class="timeline-place">Kathmandu Metropolitan City</p><p>Supported engineering estimates, drawings, ETABS models, GIS mapping and topographical surveys.</p></article>
+          <article class="timeline-item"><span class="timeline-date">July 2025</span><h4>Digital Literacy Trainer</h4><p class="timeline-place">Dhading District, Nepal</p><p>Delivered interactive training in computer fundamentals and introductory programming for secondary students.</p></article>
+        </div>
+        <div class="section-heading"><span>03</span><div><h3>Selected training & achievements</h3></div></div>
+        <div class="two-col-cards">
+          <article class="simple-card"><span class="card-stamp">2025</span><h4>Samsung Innovation Campus</h4><p>Coding and Programming — Python.</p></article>
+          <article class="simple-card"><span class="card-stamp">2025</span><h4>HEC-RAS Professional Training</h4><p>Nepal National Glacier, Water and Weather Week.</p></article>
+          <article class="simple-card"><span class="card-stamp">2024</span><h4>Integrated Water Resource Management</h4><p>UNDP online training for climate resilience.</p></article>
+          <article class="simple-card"><span class="card-stamp">2024</span><h4>Water Safety Planning</h4><p>UNDP online training.</p></article>
+        </div>
+      </section>
+
+      <section class="page" data-page="projects" id="projects" aria-labelledby="projects-heading" hidden>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> RESEARCH & PROJECTS</div>
+        <h2 class="page-title" id="projects-heading">Selected <em>work.</em></h2>
+        <p class="page-intro">Research and engineering projects spanning Himalayan river processes, sustainable reservoirs, computing and structural design.</p>
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-button" data-filter="hydrology" aria-pressed="false">Hydrology</button>
+          <button type="button" class="filter-button" data-filter="hydropower" aria-pressed="false">Hydropower</button>
+          <button type="button" class="filter-button" data-filter="computing" aria-pressed="false">Computing</button>
+          <button type="button" class="filter-button" data-filter="structural" aria-pressed="false">Structural</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="hydrology"><div class="project-art art-river"><span class="art-icon">≈</span><small>HYDROLOGY + ML</small></div><div class="project-body"><div class="project-meta">MSc thesis · 2026</div><h3>Hybrid SWAT–XGBoost Sediment Prediction</h3><p>Improving daily sediment load predictions in the Marsyangdi Basin through residual learning and SHAP-based interpretation.</p><div class="tag-row"><span>SWAT</span><span>XGBoost</span><span>SHAP</span></div></div></article>
+          <article class="project-card" data-category="hydrology"><div class="project-art art-sediment"><span class="art-icon">⌁</span><small>RIVER ANALYSIS</small></div><div class="project-body"><div class="project-meta">Research project · 2025</div><h3>Revisiting Sediment Rating Curves</h3><p>Examining sediment rating relationships in data-scarce Himalayan rivers using the Marsyangdi Basin as a case study.</p><div class="tag-row"><span>Sediment</span><span>Statistical analysis</span></div></div></article>
+          <article class="project-card" data-category="hydropower"><div class="project-art art-reservoir"><span class="art-icon">◈</span><small>RESERVOIR SUSTAINABILITY</small></div><div class="project-body"><div class="project-meta">Engineering study · 2025</div><h3>Sediment Strategies for Budigandaki</h3><p>Using RESCON2 to compare reservoir sediment-management techniques, including economic and environmental considerations.</p><div class="tag-row"><span>RESCON2</span><span>Hydropower</span></div></div></article>
+          <article class="project-card" data-category="computing"><div class="project-art art-computing"><span class="art-icon">▥</span><small>PYTHON DASHBOARD</small></div><div class="project-body"><div class="project-meta">Coding capstone · 2025</div><h3>Hydro-Predictor</h3><p>A Python-based dashboard concept for predictive maintenance and remaining useful-life analysis of hydropower equipment.</p><div class="tag-row"><span>Python</span><span>Predictive maintenance</span></div></div></article>
+          <article class="project-card" data-category="structural"><div class="project-art art-structure"><span class="art-icon">▤</span><small>STRUCTURAL ENGINEERING</small></div><div class="project-body"><div class="project-meta">Bachelor's capstone · 2023</div><h3>Seismic Design of a Multi-storey Hotel</h3><p>Structural modelling and seismic analysis in ETABS, with engineering drawings and structural design in AutoCAD.</p><div class="tag-row"><span>ETABS</span><span>AutoCAD</span></div></div></article>
+        </div>
+        <p class="project-note">Project artwork is illustrative. Technical figures and photographs can be added as they become available.</p>
+      </section>
+
+      <section class="page" data-page="publications" id="publications" aria-labelledby="publications-heading" hidden>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> PUBLICATIONS & ACTIVITIES</div>
+        <h2 class="page-title" id="publications-heading">Research, shared <em>and ongoing.</em></h2>
+        <p class="page-intro">Published work and manuscripts in review, followed by leadership and community engagement.</p>
+        <div class="section-heading"><span>01</span><div><h3>Publications</h3><p>Publication status reflects the November 2026 CV and will be updated as work progresses.</p></div></div>
+        <div class="publication-list">
+          <article class="publication-card"><div class="pub-number">01</div><div><div class="pub-topline"><span class="status published">Published · 2026</span><span>Everest Advances in Science and Technology</span></div><h4>Estimation of Suspended Sediment Load and Spatial Distribution of Sediment Yield in the Marsyangdi River Basin, Nepal</h4><a class="text-link" href="https://doi.org/10.3126/east.v2i1.98628" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">↗</span></a></div></article>
+          <article class="publication-card"><div class="pub-number">02</div><div><div class="pub-topline"><span class="status review">Under review</span><span>Journal of Hydrology: Regional Studies</span></div><h4>Interpretable SWAT–XGBoost residual learning for daily suspended sediment load prediction in a monsoon-dominated Himalayan basin: Marsyangdi River Basin, Nepal</h4><p>Hybrid process-based modelling and explainable machine learning for suspended sediment prediction.</p></div></article>
+          <article class="publication-card"><div class="pub-number">03</div><div><div class="pub-topline"><span class="status review">Under review</span><span>Journal of Hydrology: Regional Studies</span></div><h4>Explainable Machine Learning for Suspended Sediment Concentration Prediction and Catchment Sediment Yield Assessment in a Data-Scarce Himalayan River Basin, Nepal</h4><p>Data-driven sediment concentration prediction with a focus on interpretability.</p></div></article>
+        </div>
+        <div class="section-heading"><span>02</span><div><h3>Activities & leadership</h3><p>Working with people, communities and ideas beyond the classroom.</p></div></div>
+        <div class="two-col-cards">
+          <article class="simple-card"><span class="card-stamp">2022 — 2024</span><h4>President · Lions Club of Kathmandu Abhisekh</h4><p>Led initiatives including health camps, blood donation and environmental programs, working with local organizations.</p></article>
+          <article class="simple-card"><span class="card-stamp">2017 — 2025</span><h4>Class Representative</h4><p>Coordinated with faculty and represented students through successive academic stages.</p></article>
+          <article class="simple-card"><span class="card-stamp">2025</span><h4>Digital Literacy Outreach</h4><p>Supported computer and basic programming learning for secondary students in Dhading.</p></article>
+          <article class="simple-card"><span class="card-stamp">Ongoing interests</span><h4>Water, Climate & Communities</h4><p>Interested in connecting technical water research with resilience and practical community needs.</p></article>
+        </div>
+      </section>
+
+      <section class="page" data-page="contact" id="contact" aria-labelledby="contact-heading" hidden>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> CONTACT & ACADEMIC PROFILES</div>
+        <h2 class="page-title" id="contact-heading">Let's start a <em>conversation.</em></h2>
+        <p class="page-intro">I welcome conversations about hydrological research, interdisciplinary collaboration and opportunities to contribute to sustainable water-resource management.</p>
+        <div class="contact-hero">
+          <div class="contact-hero-flower" aria-hidden="true">✿</div>
+          <span class="kicker">SAY HELLO</span>
+          <h3>Have a research idea or opportunity in mind?</h3>
+          <p>Email is the easiest way to reach me. I would be glad to connect.</p>
+          <a class="button primary" href="mailto:sadikshyaghimire0@gmail.com?subject=Research%20conversation">Email Sadikshya <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:sadikshyaghimire0@gmail.com"><span class="contact-card-icon">✉</span><span><small>Email</small><strong>sadikshyaghimire0@gmail.com</strong></span><b aria-hidden="true">↗</b></a>
+          <a class="contact-card" href="https://www.linkedin.com/in/sadikshyaghimire" target="_blank" rel="noopener noreferrer"><span class="contact-card-icon">in</span><span><small>LinkedIn</small><strong>sadikshyaghimire</strong></span><b aria-hidden="true">↗</b></a>
+          <a class="contact-card" href="https://github.com/Sadikshya1109" target="_blank" rel="noopener noreferrer"><span class="contact-card-icon">⌘</span><span><small>GitHub</small><strong>Sadikshya1109</strong></span><b aria-hidden="true">↗</b></a>
+          <a class="contact-card" href="mailto:sadikshyaghimire0@gmail.com?subject=CV%20request"><span class="contact-card-icon">↓</span><span><small>Curriculum vitae</small><strong>Request my CV</strong></span><b aria-hidden="true">↗</b></a>
+        </div>
+        <p class="privacy-note">A public CV download can be added later after reviewing which contact details should be visible online.</p>
+      </section>
+      <footer class="site-footer"><span>© <span id="year">2026</span> Sadikshya Ghimire</span><span>Made with care ✿ · Inspired by the <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener noreferrer">vCard template</a></span></footer>
+    </main>
+  </div>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
 </body>
-
 </html>
